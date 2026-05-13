@@ -1,0 +1,11 @@
+name: internet-test
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+    
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "CRON IS ALIVE $(date -u)"
